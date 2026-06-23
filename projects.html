@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projelerimiz | As İnşaat - Tamamlanan ve Devam Eden Projeler</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="As İnşaat'ın tamamlanan ve devam eden prestijli rezidans, villa, iş merkezi ve özel iç mimari projeleri. Proje detaylarını ve özelliklerini inceleyin.">
+  <meta name="keywords" content="inşaat projeleri, rezidans projeleri, lüks villa yapımı, ankara konut projeleri, ticari plazalar">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="As İnşaat">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect x=%2225%22 y=%2225%22 width=%2250%22 height=%2250%22 fill=%22none%22 stroke=%22%23d4af37%22 stroke-width=%228%22 rotate=%2245%22/></svg>">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Background Grid Lines -->
+  <div class="bg-grid-lines"></div>
+
+  <!-- Glass Header -->
+  <header class="glass-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"></span>
+        AS<span>İNŞAAT</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item">Anasayfa</a>
+        <a href="about.html" class="nav-item">Kurumsal</a>
+        <a href="projects.html" class="nav-item active">Projelerimiz</a>
+        <a href="contact.html" class="nav-item">İletişim</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menü">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="nav-item">Anasayfa</a>
+    <a href="about.html" class="nav-item">Kurumsal</a>
+    <a href="projects.html" class="nav-item active">Projelerimiz</a>
+    <a href="contact.html" class="nav-item">İletişim</a>
+  </div>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-badge">Portfolyomuz</span>
+        <h1 class="page-hero-title">İnşa Ettiğimiz Eserler</h1>
+      </div>
+    </section>
+
+    <!-- Projects Portfolio Section -->
+    <section class="page-content-sec">
+      <div class="container">
+        
+        <!-- Filters Header row -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3.5rem; flex-wrap: wrap; gap: 1.5rem;">
+          <div>
+            <h2 class="section-title" style="margin-bottom: 0.5rem; font-size: 2rem;">Tüm Projelerimiz</h2>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">Kategorilere göre filtreleme yaparak projelerimizin detaylarına ulaşabilirsiniz.</p>
+          </div>
+          
+          <div class="project-filters" style="margin-top: 0;">
+            <button class="filter-btn active" data-filter="all">TÜMÜ</button>
+            <button class="filter-btn" data-filter="residential">KONUT</button>
+            <button class="filter-btn" data-filter="commercial">TİCARİ</button>
+            <button class="filter-btn" data-filter="interior">İÇ MİMARİ</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Grid list of projects -->
+        <div class="projects-grid" id="projectsGrid"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon"></span>
+          AS<span>İNŞAAT</span>
+        </a>
+        <p>Mühendislik sınırlarını zorlayan vizyonumuzla, güvenli ve lüks projeler inşa ederek geleceğin dünyasını kuruyoruz.</p>
+      </div>
+      
+      <div>
+        <h4 class="footer-title">Hızlı Menü</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Anasayfa</a></li>
+          <li><a href="about.html" class="footer-link">Kurumsal</a></li>
+          <li><a href="projects.html" class="footer-link">Projelerimiz</a></li>
+          <li><a href="contact.html" class="footer-link">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Hizmetlerimiz</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#hizmetler" class="footer-link">Lüks Konut İnşaatı</a></li>
+          <li><a href="index.html#hizmetler" class="footer-link">Çelik Konstrüksiyon</a></li>
+          <li><a href="index.html#hizmetler" class="footer-link">Mimarlık Projeleri</a></li>
+          <li><a href="index.html#hizmetler" class="footer-link">Kentsel Dönüşüm</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">E-Bülten</h4>
+        <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">Projelerimizden ve gelişmelerden haberdar olmak için bültenimize kaydolun.</p>
+        <div style="display: flex; gap: 8px;">
+          <input type="email" class="form-input" placeholder="E-posta adresiniz" style="padding: 10px 14px; font-size: 0.85rem;">
+          <button class="btn btn-primary" style="padding: 10px 16px; font-size: 0.8rem; border-radius: 6px;">KAYDOL</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="copyright">&copy; 2026 AS İNŞAAT. Tüm Hakları Saklıdır.</div>
+      <div class="footer-socials">
+        <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+        <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
+        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Database & Script files -->
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

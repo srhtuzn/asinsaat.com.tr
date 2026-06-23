@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim | As İnşaat - Merkez Ofis ve Şantiye Bilgileri</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="As İnşaat Ankara merkez ofis adresi, telefon numaraları, e-posta bilgileri ve şantiyelerimiz. Bizimle iletişime geçin, projelerimiz hakkında bilgi alın.">
+  <meta name="keywords" content="as inşaat telefon, as inşaat adres, inşaat teklif alma, as inşaat ankara ofis, şantiye konumları">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="As İnşaat">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect x=%2225%22 y=%2225%22 width=%2250%22 height=%2250%22 fill=%22none%22 stroke=%22%23d4af37%22 stroke-width=%228%22 rotate=%2245%22/></svg>">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Background Grid Lines -->
+  <div class="bg-grid-lines"></div>
+
+  <!-- Glass Header -->
+  <header class="glass-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"></span>
+        AS<span>İNŞAAT</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item">Anasayfa</a>
+        <a href="about.html" class="nav-item">Kurumsal</a>
+        <a href="projects.html" class="nav-item">Projelerimiz</a>
+        <a href="contact.html" class="nav-item active">İletişim</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menü">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="nav-item">Anasayfa</a>
+    <a href="about.html" class="nav-item">Kurumsal</a>
+    <a href="projects.html" class="nav-item">Projelerimiz</a>
+    <a href="contact.html" class="nav-item active">İletişim</a>
+  </div>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-badge">Bize Ulaşın</span>
+        <h1 class="page-hero-title">İletişim Kanallarımız</h1>
+      </div>
+    </section>
+
+    <!-- Contact details section -->
+    <section class="page-content-sec">
+      <div class="container contact-layout">
+        
+        <!-- Info Column -->
+        <div class="contact-info-block">
+          <span class="section-badge">Ulaşım Bilgileri</span>
+          <h2 class="section-title">Merkez Ofisimiz</h2>
+          <p class="section-desc" style="margin-bottom: 2rem;">As İnşaat projeleri ile ilgili teknik bilgi almak, satış ofislerimizi ziyaret etmek ya da iş ortaklığı teklifleri sunmak için aşağıdaki iletişim kanallarını kullanabilirsiniz.</p>
+          
+          <ul class="contact-details-list" style="margin-top: 0;">
+            <li class="contact-detail-item">
+              <span class="contact-icon">📍</span>
+              <div class="contact-text">
+                <h4>Adres</h4>
+                <p>Kızılırmak Mah. Ufuk Üniversitesi Cad. No:8 Plaza, Çankaya/Ankara</p>
+              </div>
+            </li>
+            <li class="contact-detail-item">
+              <span class="contact-icon">📞</span>
+              <div class="contact-text">
+                <h4>Telefon</h4>
+                <p>+90 (312) 444 27 27</p>
+              </div>
+            </li>
+            <li class="contact-detail-item">
+              <span class="contact-icon">✉️</span>
+              <div class="contact-text">
+                <h4>E-Posta</h4>
+                <p>info@asinsaat.com.tr</p>
+              </div>
+            </li>
+            <li class="contact-detail-item">
+              <span class="contact-icon">🕰️</span>
+              <div class="contact-text">
+                <h4>Çalışma Saatlerimiz</h4>
+                <p>Hafta içi: 09:00 - 18:30 | Cumartesi: 10:00 - 16:00</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Form Column -->
+        <div class="contact-form">
+          <h3 class="form-title">Proje & Teklif Talep Formu</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Adınız Soyadınız *</label>
+                <input type="text" class="form-input" id="formName" placeholder="Ahmet Yılmaz" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Telefon Numaranız</label>
+                <input type="tel" class="form-input" id="formPhone" placeholder="0555 123 4567">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">E-Posta Adresiniz *</label>
+              <input type="email" class="form-input" id="formEmail" placeholder="ahmet@mail.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mesajınız *</label>
+              <textarea class="form-textarea" id="formMessage" placeholder="Detaylı teklif talebiniz veya sorularınız..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit-btn">Mesajı Gönder</button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Google Maps styled iframe -->
+      <div class="container" style="margin-top: 6rem;">
+        <span class="section-badge">Konumumuz</span>
+        <h2 class="section-title" style="font-size: 2rem; margin-bottom: 2rem;">Haritada Biz</h2>
+        
+        <div style="width: 100%; height: 400px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); background: var(--bg-darker); position: relative;">
+          <!-- Grey scale styled Map placeholder/embed -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.7725964893707!2d32.80806457659556!3d39.90176848683526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f40f09ca283%3A0xb35a392817ee6a66!2zS8SxesSxbM1ybWFrLCBVZnVrIMOcbmkudmVyc2l0ZXNpIENkLiwgw4dhbmtheWEvQW5rYXJh!5e0!3m2!2str!3str!4v1719123456789!5m2!2str!3str" 
+            width="100%" 
+            height="100%" 
+            style="border:0; filter: grayscale(1) invert(0.9) contrast(1.15) opacity(0.8);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon"></span>
+          AS<span>İNŞAAT</span>
+        </a>
+        <p>Mühendislik sınırlarını zorlayan vizyonumuzla, güvenli ve lüks projeler inşa ederek geleceğin dünyasını kuruyoruz.</p>
+      </div>
+      
+      <div>
+        <h4 class="footer-title">Hızlı Menü</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Anasayfa</a></li>
+          <li><a href="about.html" class="footer-link">Kurumsal</a></li>
+          <li><a href="projects.html" class="footer-link">Projelerimiz</a></li>
+          <li><a href="contact.html" class="footer-link">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Hizmetlerimiz</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#hizmetler" class="footer-link">Lüks Konut İnşaatı</a></li>
+          <li><a href="index.html#hizmetler" class="footer-link">Çelik Konstrüksiyon</a></li>
+          <li><a href="index.html#hizmetler" class="footer-link">Mimarlık Projeleri</a></li>
+          <li><a href="index.html#hizmetler" class="footer-link">Kentsel Dönüşüm</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">E-Bülten</h4>
+        <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">Projelerimizden ve gelişmelerden haberdar olmak için bültenimize kaydolun.</p>
+        <div style="display: flex; gap: 8px;">
+          <input type="email" class="form-input" placeholder="E-posta adresiniz" style="padding: 10px 14px; font-size: 0.85rem;">
+          <button class="btn btn-primary" style="padding: 10px 16px; font-size: 0.8rem; border-radius: 6px;">KAYDOL</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="copyright">&copy; 2026 AS İNŞAAT. Tüm Hakları Saklıdır.</div>
+      <div class="footer-socials">
+        <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+        <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
+        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Database & Script files -->
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

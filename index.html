@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>As İnşaat | Lüks Konut, Endüstriyel Yapı ve Mimari Tasarım</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="As İnşaat; yenilikçi mimari tasarımlar, lüks konut projeleri, akıllı rezidanslar ve dayanıklı ticari yapılar inşa eder. Geleceğin yapılarını mühendislik hassasiyetiyle tasarlıyoruz.">
+  <meta name="keywords" content="inşaat firması, lüks konut projeleri, villa tasarımı, kentsel dönüşüm, mimarlık ofisi, akıllı binalar, ankara inşaat firmaları, as inşaat">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="As İnşaat">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect x=%2225%22 y=%2225%22 width=%2250%22 height=%2250%22 fill=%22none%22 stroke=%22%23d4af37%22 stroke-width=%228%22 rotate=%2245%22/></svg>">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Background Lines -->
+  <div class="bg-grid-lines"></div>
+
+  <!-- Glass Header -->
+  <header class="glass-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"></span>
+        AS<span>İNŞAAT</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item active">Anasayfa</a>
+        <a href="about.html" class="nav-item">Kurumsal</a>
+        <a href="projects.html" class="nav-item">Projelerimiz</a>
+        <a href="contact.html" class="nav-item">İletişim</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menü">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="nav-item active">Anasayfa</a>
+    <a href="about.html" class="nav-item">Kurumsal</a>
+    <a href="projects.html" class="nav-item">Projelerimiz</a>
+    <a href="contact.html" class="nav-item">İletişim</a>
+  </div>
+
+  <main>
+    <!-- Hero Section with 3D Explode Animation -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-layout">
+          <div class="hero-content">
+            <span class="section-badge">Mühendislik ve Estetik</span>
+            <h1 class="hero-title">
+              Geleceği <span>İnşa Ediyoruz.</span>
+            </h1>
+            <p class="hero-description">
+              As İnşaat olarak, modern mimariyi ve üstün yapı teknolojilerini harmanlayarak şehirlerin çehresini değiştiren, sürdürülebilir, prestijli yaşam alanları tasarlıyoruz.
+            </p>
+            <div class="hero-actions">
+              <a href="projects.html" class="btn btn-primary">Projeleri Keşfet</a>
+              <a href="contact.html" class="btn btn-secondary">Bizimle İletişime Geç</a>
+            </div>
+          </div>
+
+          <!-- 3D Deconstruction Building Viewport -->
+          <div class="hero-3d-viewport" id="hero3dViewport">
+            
+            <!-- Technical Labels floating -->
+            <div class="tech-label label-blueprint">PLANLAMA: MİMARİ BLUEPRINT</div>
+            <div class="tech-label label-structure">MÜHENDİSLİK: ÇELİK KARKAS</div>
+            <div class="tech-label label-facade">MİMARİ: PRESTİJLİ CEPHE</div>
+
+            <div class="hero-3d-container" id="hero3dContainer">
+              
+              <!-- Layer 1: Blueprint vector lines -->
+              <div class="building-layer layer-blueprint">
+                <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Blueprint grid lines -->
+                  <path d="M20 20 H380 M20 70 H380 M20 120 H380 M20 170 H380 M20 220 H380 M20 270 H380 M20 320 H380 M20 370 H380 M20 420 H380" stroke="rgba(30, 144, 255, 0.15)" stroke-width="1"/>
+                  <path d="M50 20 V480 M100 20 V480 M150 20 V480 M200 20 V480 M250 20 V480 M300 20 V480 M350 20 V480" stroke="rgba(30, 144, 255, 0.15)" stroke-width="1"/>
+                  
+                  <!-- Building Outline lineart -->
+                  <rect x="80" y="80" width="240" height="380" stroke="#00bfff" stroke-dasharray="4 4" stroke-width="1.5"/>
+                  <line x1="80" y1="80" x2="200" y2="20" stroke="#00bfff" stroke-width="1.5" stroke-dasharray="4 4"/>
+                  <line x1="320" y1="80" x2="200" y2="20" stroke="#00bfff" stroke-width="1.5" stroke-dasharray="4 4"/>
+                  
+                  <!-- Inside grid blueprints -->
+                  <rect x="110" y="120" width="40" height="60" stroke="#00bfff" stroke-width="1"/>
+                  <rect x="180" y="120" width="40" height="60" stroke="#00bfff" stroke-width="1"/>
+                  <rect x="250" y="120" width="40" height="60" stroke="#00bfff" stroke-width="1"/>
+                  
+                  <rect x="110" y="210" width="40" height="60" stroke="#00bfff" stroke-width="1"/>
+                  <rect x="180" y="210" width="40" height="60" stroke="#00bfff" stroke-width="1"/>
+                  <rect x="250" y="210" width="40" height="60" stroke="#00bfff" stroke-width="1"/>
+                  
+                  <rect x="110" y="300" width="40" height="60" stroke="#00bfff" stroke-width="1"/>
+                  <rect x="180" y="300" width="40" height="60" stroke="#00bfff" stroke-width="1"/>
+                  <rect x="250" y="300" width="40" height="60" stroke="#00bfff" stroke-width="1"/>
+
+                  <rect x="110" y="390" width="180" height="70" stroke="#00bfff" stroke-width="1"/>
+
+                  <!-- Technical lines and measurements -->
+                  <path d="M60 80 H80 M60 460 H80" stroke="#00bfff" stroke-width="1"/>
+                  <line x1="65" y1="80" x2="65" y2="460" stroke="#00bfff" stroke-width="1"/>
+                  <text x="45" y="270" fill="#00bfff" font-size="10" font-family="monospace" transform="rotate(-90 45 270)">H: 38.00m</text>
+                  
+                  <path d="M80 475 V460 M320 475 V460" stroke="#00bfff" stroke-width="1"/>
+                  <line x1="80" y1="470" x2="320" y2="470" stroke="#00bfff" stroke-width="1"/>
+                  <text x="175" y="482" fill="#00bfff" font-size="10" font-family="monospace">W: 24.00m</text>
+                </svg>
+              </div>
+              
+              <!-- Layer 2: Steel structural columns -->
+              <div class="building-layer layer-structure">
+                <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Main columns (Stanchions) -->
+                  <rect x="85" y="80" width="12" height="380" fill="#c5a028" opacity="0.8"/>
+                  <rect x="160" y="80" width="12" height="380" fill="#c5a028" opacity="0.8"/>
+                  <rect x="228" y="80" width="12" height="380" fill="#c5a028" opacity="0.8"/>
+                  <rect x="303" y="80" width="12" height="380" fill="#c5a028" opacity="0.8"/>
+                  
+                  <!-- Beams (Horizontal structural elements) -->
+                  <rect x="85" y="80" width="230" height="10" fill="#d4af37"/>
+                  <rect x="85" y="140" width="230" height="8" fill="#d4af37"/>
+                  <rect x="85" y="200" width="230" height="8" fill="#d4af37"/>
+                  <rect x="85" y="260" width="230" height="8" fill="#d4af37"/>
+                  <rect x="85" y="320" width="230" height="8" fill="#d4af37"/>
+                  <rect x="85" y="380" width="230" height="8" fill="#d4af37"/>
+                  <rect x="85" y="450" width="230" height="12" fill="#d4af37"/>
+                  
+                  <!-- Roof Truss structures -->
+                  <line x1="85" y1="80" x2="200" y2="25" stroke="#d4af37" stroke-width="4"/>
+                  <line x1="315" y1="80" x2="200" y2="25" stroke="#d4af37" stroke-width="4"/>
+                  <line x1="200" y1="25" x2="200" y2="80" stroke="#d4af37" stroke-width="3"/>
+                  <line x1="140" y1="52" x2="140" y2="80" stroke="#d4af37" stroke-width="2"/>
+                  <line x1="260" y1="52" x2="260" y2="80" stroke="#d4af37" stroke-width="2"/>
+                  
+                  <!-- Diagonal cross-bracing (Statik çaprazlar) -->
+                  <line x1="97" y1="148" x2="160" y2="200" stroke="#d4af37" stroke-width="1.5" opacity="0.6"/>
+                  <line x1="160" y1="148" x2="97" y2="200" stroke="#d4af37" stroke-width="1.5" opacity="0.6"/>
+                  
+                  <line x1="228" y1="268" x2="303" y2="320" stroke="#d4af37" stroke-width="1.5" opacity="0.6"/>
+                  <line x1="303" y1="268" x2="228" y2="320" stroke="#d4af37" stroke-width="1.5" opacity="0.6"/>
+
+                  <line x1="160" y1="388" x2="228" y2="450" stroke="#d4af37" stroke-width="1.5" opacity="0.6"/>
+                  <line x1="228" y1="388" x2="160" y2="450" stroke="#d4af37" stroke-width="1.5" opacity="0.6"/>
+                </svg>
+              </div>
+              
+              <!-- Layer 3: Completed facade -->
+              <div class="building-layer layer-facade">
+                <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Definitions for gradients -->
+                  <defs>
+                    <linearGradient id="facadeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#f3e5ab" />
+                      <stop offset="50%" stop-color="#d4af37" />
+                      <stop offset="100%" stop-color="#aa7c11" />
+                    </linearGradient>
+                    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+                      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+                    </linearGradient>
+                    <linearGradient id="skyReflect" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3" />
+                      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.5" />
+                      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0" />
+                    </linearGradient>
+                  </defs>
+
+                  <!-- Roof Slanted Canopy -->
+                  <path d="M80 80 L200 20 L320 80 Z" fill="url(#facadeGold)"/>
+                  <path d="M200 20 L205 20 L320 80 L315 80 Z" fill="#ffffff" opacity="0.2"/>
+                  
+                  <!-- Main Glass facade body -->
+                  <rect x="80" y="80" width="240" height="380" fill="url(#glassGrad)" stroke="url(#facadeGold)" stroke-width="3"/>
+                  
+                  <!-- Glass Panels divider lines -->
+                  <line x1="140" y1="80" x2="140" y2="460" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+                  <line x1="200" y1="80" x2="200" y2="460" stroke="url(#facadeGold)" stroke-width="1.5" opacity="0.5"/>
+                  <line x1="260" y1="80" x2="260" y2="460" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+                  
+                  <line x1="80" y1="140" x2="320" y2="140" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+                  <line x1="80" y1="200" x2="320" y2="200" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+                  <line x1="80" y1="260" x2="320" y2="260" stroke="url(#facadeGold)" stroke-width="2" opacity="0.5"/>
+                  <line x1="80" y1="320" x2="320" y2="320" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+                  <line x1="80" y1="380" x2="320" y2="380" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+
+                  <!-- Diagonal reflection line on glass -->
+                  <path d="M80 180 L280 80 L320 80 L80 200 Z" fill="url(#skyReflect)"/>
+                  <path d="M80 340 L320 220 L320 250 L80 370 Z" fill="url(#skyReflect)"/>
+
+                  <!-- Gold Vertical Columns (Left/Right edges) -->
+                  <rect x="75" y="80" width="8" height="380" fill="url(#facadeGold)"/>
+                  <rect x="317" y="80" width="8" height="380" fill="url(#facadeGold)"/>
+
+                  <!-- Entrance Portal -->
+                  <rect x="140" y="380" width="120" height="80" fill="#030712" stroke="url(#facadeGold)" stroke-width="2"/>
+                  <line x1="200" y1="380" x2="200" y2="460" stroke="url(#facadeGold)" stroke-width="1"/>
+                  <circle cx="195" cy="420" r="2" fill="url(#facadeGold)"/>
+                  <circle cx="205" cy="420" r="2" fill="url(#facadeGold)"/>
+                  <rect x="150" y="390" width="100" height="10" fill="url(#facadeGold)" opacity="0.8"/>
+                </svg>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mouse Scroll indicator -->
+      <div class="scroll-indicator">
+        <span>AŞAĞI KAYDIRIN</span>
+        <div class="scroll-mouse"></div>
+      </div>
+    </section>
+
+    <!-- Highlights Counters Section -->
+    <section class="highlights-section">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" data-target="15" data-suffix="+">0</div>
+          <div class="stat-title">Yıllık Tecrübe</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="120" data-suffix="+">0</div>
+          <div class="stat-title">Tamamlanan Konut</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="8" data-suffix="">0</div>
+          <div class="stat-title">Aktif Şantiye</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="100" data-suffix="%">0</div>
+          <div class="stat-title">Müşteri Memnuniyeti</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+      <div class="container">
+        <div style="text-align: center;">
+          <span class="section-badge">Hizmet Alanlarımız</span>
+          <h2 class="section-title">Uzmanlık Alanlarımız</h2>
+          <p class="section-desc" style="margin: 0 auto 4rem auto;">As İnşaat olarak, fikirden anahtar teslime kadar yapının her aşamasında en yüksek kalite standartlarında profesyonel çözümler üretiyoruz.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <!-- Service 1 -->
+          <article class="service-card">
+            <div class="service-icon">
+              <!-- Inline SVG Architecture icon -->
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Lüks Konut Projeleri</h3>
+            <p class="service-text">Estetik ve konforun ön planda olduğu, modern akıllı ev sistemleriyle donatılmış rezidanslar, lüks apartmanlar ve özel müstakil villalar inşa ediyoruz.</p>
+            <ul class="service-list">
+              <li class="service-list-item">Akıllı Ev Altyapısı</li>
+              <li class="service-list-item">Lüks Sosyal Donatılar</li>
+              <li class="service-list-item">A+ Enerji Tasarrufu</li>
+            </ul>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="service-card">
+            <div class="service-icon">
+              <!-- Inline SVG Industry icon -->
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Endüstriyel & Ticari Yapılar</h3>
+            <p class="service-text">İş dünyasının yüksek standartlarına uygun, geniş açıklıklı çelik yapılar, lojistik depolar, modern plazalar ve iş merkezleri geliştiriyoruz.</p>
+            <ul class="service-list">
+              <li class="service-list-item">Modüler Ofis Sistemleri</li>
+              <li class="service-list-item">Yüksek Teknolojik Altyapı</li>
+              <li class="service-list-item">Hızlı Çelik Konstrüksiyon</li>
+            </ul>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="service-card">
+            <div class="service-icon">
+              <!-- Inline SVG Design icon -->
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Mimari & İç Tasarım</h3>
+            <p class="service-text">Yaşam alanlarınızın kimliğini belirleyen, ergonomik, yenilikçi ve sanatsal değere sahip mimari projeler ve detaylı iç mekan konsept tasarımları.</p>
+            <ul class="service-list">
+              <li class="service-list-item">3D Görselleştirme & Render</li>
+              <li class="service-list-item">Özel Detay Çözümleri</li>
+              <li class="service-list-item">Uygulama Danışmanlığı</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="featured-section">
+      <div class="container">
+        <div class="project-header-row">
+          <div>
+            <span class="section-badge">Geleceğin Silüeti</span>
+            <h2 class="section-title" style="margin-bottom: 0;">Öne Çıkan Projelerimiz</h2>
+          </div>
+          
+          <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">TÜMÜ</button>
+            <button class="filter-btn" data-filter="residential">KONUT</button>
+            <button class="filter-btn" data-filter="commercial">TİCARİ</button>
+            <button class="filter-btn" data-filter="interior">İÇ MİMARİ</button>
+          </div>
+        </div>
+
+        <!-- Project Grid loaded dynamically -->
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container contact-layout">
+        <div class="contact-info-block">
+          <span class="section-badge">Bizimle İletişime Geçin</span>
+          <h2 class="section-title">Projelerimizi Yakından İnceleyin</h2>
+          <p class="section-desc" style="margin-bottom: 1.5rem;">As İnşaat kalitesi ve projeleri hakkında bilgi almak, teklif istemek veya şantiyelerimizi ziyaret etmek için formu doldurabilir ya da bizimle doğrudan iletişime geçebilirsiniz.</p>
+          
+          <ul class="contact-details-list">
+            <li class="contact-detail-item">
+              <span class="contact-icon">📍</span>
+              <div class="contact-text">
+                <h4>Merkez Ofis</h4>
+                <p>Kızılırmak Mah. Ufuk Üniversitesi Cad. No:8 Plaza, Çankaya/Ankara</p>
+              </div>
+            </li>
+            <li class="contact-detail-item">
+              <span class="contact-icon">📞</span>
+              <div class="contact-text">
+                <h4>Telefon</h4>
+                <p>+90 (312) 444 27 27</p>
+              </div>
+            </li>
+            <li class="contact-detail-item">
+              <span class="contact-icon">✉️</span>
+              <div class="contact-text">
+                <h4>E-Posta</h4>
+                <p>info@asinsaat.com.tr</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3 class="form-title">İletişim Formu</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Adınız Soyadınız *</label>
+                <input type="text" class="form-input" id="formName" placeholder="Örn: Ahmet Yılmaz" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Telefon Numaranız</label>
+                <input type="tel" class="form-input" id="formPhone" placeholder="Örn: 0555 123 4567">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">E-Posta Adresiniz *</label>
+              <input type="email" class="form-input" id="formEmail" placeholder="Örn: ahmet@mail.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mesajınız *</label>
+              <textarea class="form-textarea" id="formMessage" placeholder="Sorularınızı veya proje taleplerinizi buraya yazabilirsiniz..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit-btn">Gönder</button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon"></span>
+          AS<span>İNŞAAT</span>
+        </a>
+        <p>Mühendislik sınırlarını zorlayan vizyonumuzla, güvenli ve lüks projeler inşa ederek geleceğin dünyasını kuruyoruz.</p>
+      </div>
+      
+      <div>
+        <h4 class="footer-title">Hızlı Menü</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Anasayfa</a></li>
+          <li><a href="about.html" class="footer-link">Kurumsal</a></li>
+          <li><a href="projects.html" class="footer-link">Projelerimiz</a></li>
+          <li><a href="contact.html" class="footer-link">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Hizmetlerimiz</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#hizmetler" class="footer-link">Lüks Konut İnşaatı</a></li>
+          <li><a href="index.html#hizmetler" class="footer-link">Çelik Konstrüksiyon</a></li>
+          <li><a href="index.html#hizmetler" class="footer-link">Mimarlık Projeleri</a></li>
+          <li><a href="index.html#hizmetler" class="footer-link">Kentsel Dönüşüm</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">E-Bülten</h4>
+        <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">Projelerimizden ve gelişmelerden haberdar olmak için bültenimize kaydolun.</p>
+        <div style="display: flex; gap: 8px;">
+          <input type="email" class="form-input" placeholder="E-posta adresiniz" style="padding: 10px 14px; font-size: 0.85rem;">
+          <button class="btn btn-primary" style="padding: 10px 16px; font-size: 0.8rem; border-radius: 6px;">KAYDOL</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="copyright">&copy; 2026 AS İNŞAAT. Tüm Hakları Saklıdır.</div>
+      <div class="footer-socials">
+        <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+        <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
+        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP Core and ScrollTrigger from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <!-- Project Database -->
+  <script src="projects.js"></script>
+  
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
