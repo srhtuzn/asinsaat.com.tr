@@ -128,8 +128,8 @@ function initScrollAnimations() {
     scrollTrigger: {
       trigger: ".hero-section",
       start: "top top",
-      end: "+=200%",
-      scrub: 1.5,
+      end: "+=80%",
+      scrub: 0.8,
       pin: true,
       anticipatePin: 1
     }
