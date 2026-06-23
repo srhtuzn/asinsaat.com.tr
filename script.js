@@ -84,6 +84,19 @@ function initScrollAnimations() {
 
   gsap.registerPlugin(ScrollTrigger);
 
+  // 1. Giriş Animasyonu (Görsel wow efekti - Yükleme tamamlanınca katmanlar birleşir)
+  gsap.set(".layer-blueprint", { z: -350, y: -150, opacity: 0 });
+  gsap.set(".layer-structure", { z: -100, rotateY: 45, opacity: 0 });
+  gsap.set(".layer-facade", { z: 350, y: 150, opacity: 0 });
+  gsap.set(".hero-content > *", { opacity: 0, y: 30 });
+
+  // Animasyonu başlat
+  const startTl = gsap.timeline({ delay: 0.3 });
+  startTl.to(".layer-blueprint", { z: 0, y: 0, opacity: 1, duration: 1.4, ease: "power2.out" })
+         .to(".layer-structure", { z: 0, rotateY: 0, opacity: 0.8, duration: 1.6, ease: "power2.out" }, "-=1.0")
+         .to(".layer-facade", { z: 0, y: 0, opacity: 1, duration: 1.8, ease: "power2.out" }, "-=1.2")
+         .to(".hero-content > *", { opacity: 1, y: 0, duration: 1.0, stagger: 0.2, ease: "power3.out" }, "-=1.4");
+
   // Fare hareketine göre 3D kutuyu hafifçe döndürme etkisi (Paralaks)
   const viewport = document.getElementById("hero3dViewport");
   const container = document.getElementById("hero3dContainer");
@@ -96,9 +109,9 @@ function initScrollAnimations() {
       
       // Kaydırma animasyonunu ezmemek için GSAP quickTo kullanıyoruz
       gsap.to(container, {
-        rotateY: -25 + (x / rect.width) * 20,
-        rotateX: 20 - (y / rect.height) * 20,
-        duration: 0.5,
+        rotateY: -25 + (x / rect.width) * 15,
+        rotateX: 20 - (y / rect.height) * 15,
+        duration: 0.6,
         ease: "power2.out"
       });
     });
@@ -107,79 +120,63 @@ function initScrollAnimations() {
       gsap.to(container, {
         rotateY: -25,
         rotateX: 20,
-        duration: 1,
+        duration: 1.2,
         ease: "power2.out"
       });
     });
   }
 
-  // 3D Bina Katmanlarının Kaydırma Tetikleyici ile Parçalanması
+  // 3D Bina Katmanlarının Kaydırma Tetikleyici ile Sabitlenerek (Pin) Parçalanması
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".hero-section",
       start: "top top",
-      end: "bottom top",
-      scrub: 1, // Hassas sürtünme efekti
-      pin: false
+      end: "+=120%", // Kaydırma miktarı ekran yüksekliğinin 1.2 katı boyunca sayfayı sabitleyecek
+      scrub: 1.2, // Pürüzsüz damping kaydırma tepkisi
+      pin: true, // Bölümü sabitler
+      anticipatePin: 1
     }
   });
 
-  // Katmanları 3D uzayda birbirinden ayırma ve döndürme
+  // Katmanları 3D uzayda birbirinden ayırma ve yarı saydamlık verme
   tl.to(".layer-facade", {
-    z: 180,
-    y: 80,
-    x: -30,
-    opacity: 0.85,
+    z: 220, // Öne fırlama mesafesi
+    y: 100, // Aşağı kayma
+    x: -50, // Sola kayma
+    opacity: 0.25, // İç detayları gösterebilmek için transparanlaşma
     duration: 1
   }, 0)
   .to(".layer-structure", {
-    z: 0,
+    z: 10,
     y: 0,
     x: 0,
-    rotateY: -10,
+    rotateY: -20, // Çelik karkası döndürerek detay gösterme
+    opacity: 0.9,
     duration: 1
   }, 0)
   .to(".layer-blueprint", {
-    z: -180,
-    y: -80,
-    x: 30,
+    z: -220, // Arkaya itilme
+    y: -100, // Yukarı kayma
+    x: 50, // Sağa kayma
     opacity: 0.6,
     duration: 1
-  }, 0);
-
-  // Katman etiketlerinin (Metinler) sırayla ekranda belirmesi
-  gsap.to(".label-blueprint", {
-    scrollTrigger: {
-      trigger: ".hero-section",
-      start: "top+=10% top",
-      end: "top+=40% top",
-      scrub: true
-    },
+  }, 0)
+  // Etiketlerin (Technical Labels) katmanlar açıldıkça sırayla belirmesi
+  .to(".label-blueprint", {
     opacity: 1,
-    left: "0px"
-  });
-
-  gsap.to(".label-structure", {
-    scrollTrigger: {
-      trigger: ".hero-section",
-      start: "top+=30% top",
-      end: "top+=60% top",
-      scrub: true
-    },
+    left: "-10px",
+    duration: 0.3
+  }, 0.2)
+  .to(".label-structure", {
     opacity: 1,
-    right: "0px"
-  });
-
-  gsap.to(".label-facade", {
-    scrollTrigger: {
-      trigger: ".hero-section",
-      start: "top+=50% top",
-      end: "top+=80% top",
-      scrub: true
-    },
+    right: "-10px",
+    duration: 0.3
+  }, 0.5)
+  .to(".label-facade", {
     opacity: 1,
-    left: "30px"
-  });
+    left: "10px",
+    duration: 0.3
+  }, 0.7);
 }
 
 // GSAP Yüklenemezse Çalışacak Scroll Fallback (Pure JS)
