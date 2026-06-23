@@ -586,7 +586,8 @@ header.glass-header.compact .logo-img {
   overflow: hidden;
   height: 100%;
   transform-style: preserve-3d;
-  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transition: border-color 0.4s, box-shadow 0.4s;
 }
 .service-card::before {
@@ -753,7 +754,7 @@ header.glass-header.compact .logo-img {
   box-shadow: 0 30px 80px oklch(0% 0 0 / 0.7);
   padding: 30px;
   display: grid; grid-template-columns: 1fr; gap: 2rem;
-  will-change: transform, opacity, filter;
+  isolation: isolate;
 }
 @media (min-width: 768px) { .modal-card { grid-template-columns: 1.2fr 1fr; } }
 
@@ -844,8 +845,7 @@ header.glass-header.compact .logo-img {
   padding: 1rem 2rem; border-radius: 5px;
   cursor: pointer; width: 100%;
   box-shadow: 0 4px 24px var(--gold-glow);
-  transition: box-shadow 0.35s var(--ease-custom);
-  will-change: transform;
+  transition: box-shadow 0.35s var(--ease-custom), transform 0.15s;
 }
 .form-submit-btn:hover { box-shadow: 0 8px 36px oklch(75% 0.155 81 / 0.42); }
 .form-status { margin-top: 15px; font-size: 0.88rem; font-weight: 600; text-align: center; display: none; }
